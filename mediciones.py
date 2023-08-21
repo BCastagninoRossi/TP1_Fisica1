@@ -71,8 +71,6 @@ def plot_len_mass(mass_avg, len_avg, mass_error_array, length_error_array):
     plt.legend()
     plt.grid(True)
     plt.show()
-    #plt.xscale('log')
-    #plt.yscale('log')
 
     relative_error = np.sum((len_avg-y_pred)**2)/np.sum(len_avg**2)
     print("Error relativo acumulado (largo vs masa): ", relative_error)
@@ -100,8 +98,6 @@ def plot_width_mass(width_avg, mass_avg, mass_error_array, width_error_array):
     plt.legend()
     plt.grid(True)
     plt.show()
-    #plt.xscale('log')
-    #plt.yscale('log')
 
     relative_error = np.sum((width_avg-y_pred)**2)/np.sum(width_avg**2)
     print("Error relativo acumulado (ancho vs masa): ", relative_error)
@@ -129,8 +125,7 @@ def plot_area_mass(area, mass_avg, mass_error_array, sigma_area):
     plt.legend()
     plt.grid(True)
     plt.show()
-    #plt.xscale('log')
-    #plt.yscale('log')
+
 
     relative_error = np.sum((area-y_pred)**2)/np.sum(area**2)
     print("Error relativo acumulado (area vs masa): ", relative_error)
