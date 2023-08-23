@@ -130,6 +130,6 @@ def plot_area_mass(area, mass_avg, mass_error_array, sigma_area):
     relative_error = np.sum((area-y_pred)**2)/np.sum(area**2)
     print("Error relativo acumulado (area vs masa): ", relative_error)
 
-plot_len_mass(mass_avg, len_avg, mass_error_array, length_error_array)
-plot_width_mass(width_avg, mass_avg, mass_error_array, width_error_array)
-plot_area_mass(area, mass_avg, mass_error_array, sigma_area)
+#plot_len_mass(mass_avg, len_avg, mass_error_array, length_error_array)
+#plot_width_mass(width_avg, mass_avg, mass_error_array, width_error_array)
+#plot_area_mass(area, mass_avg, mass_error_array, sigma_area)
